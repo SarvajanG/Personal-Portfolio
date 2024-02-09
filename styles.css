@@ -68,26 +68,34 @@ body {
 
 .about-me-grid {
     /*set height and width of grid*/
-    font-size: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 80px;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 30px;
     word-wrap: break-word;
-    margin: 0px 50px;
+    margin: 0px 30px;
 }
 
 .about-me-grid img{
-    grid-row: span 2;
+    grid-row: span 3;
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-#lebron {
+#about-me-name {
     display: flex;
     font-size: 60px;
     justify-content: center;
     align-items: center;
+}
+
+#about-me-text {
+    /*change font*/
+    grid-row: span 2;
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    align-items:end;
 }
 
