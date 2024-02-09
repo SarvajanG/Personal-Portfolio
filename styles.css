@@ -70,16 +70,24 @@ body {
     /*set height and width of grid*/
     font-size: 10px;
     display: grid;
-    grid-template-columns: 640px 500px ;
-    grid-template-rows: 80px 224px;
-    gap: 80px;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 80px;
     word-wrap: break-word;
+    margin: 0px 50px;
 }
 
 .about-me-grid img{
     grid-row: span 2;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 #lebron {
+    display: flex;
     font-size: 60px;
+    justify-content: center;
+    align-items: center;
 }
+
