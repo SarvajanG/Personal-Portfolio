@@ -106,15 +106,32 @@ body {
     font-family: "Azonix";
     color: whitesmoke;
     height: 100vh;
-    display: flex;
-    align-items: center;
+    display: block;
 }
 
 #projects-header {
     height: 8vh;
     font-size: 8vh;
-    margin-top: 8vh;
-    margin-left: 8vh; /*subject to change*/
-    justify-self: flex-start;
-    align-self: flex-start;
+    padding-top: 8vh;
+    padding-left: 8vh; /*subject to change*/
+}
+
+#projects-grid-container {
+    height: 84vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects-grid {
+    height: 500px;
+    width: 500px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#projects-grid div{
+    background-color: red;
 }
