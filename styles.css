@@ -17,6 +17,14 @@ body {
     height: 100%;
 }
 
+a {
+    text-decoration: none; 
+}
+
+a:visited {
+    color: whitesmoke;
+}
+
 /*--------------------Header--------------------*/
 .header {
     background-color: #333333;
@@ -124,14 +132,25 @@ body {
 }
 
 #projects-grid {
-    height: 500px;
-    width: 500px;
-    gap: 10px;
+    gap: 50px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
 }
 
-#projects-grid div{
-    background-color: red;
+.projects-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: red; /*remove once fully edited*/
+    height: 300px;
+    width: 700px;
+    font-size: 25px;
+}
+
+.projects-item img {
+    border: 10px solid black;
+    border-radius: 50px;
+    height: 90%;
+    width: 100%;
 }
