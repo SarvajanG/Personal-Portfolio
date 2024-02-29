@@ -56,7 +56,6 @@ a:visited {
     background-color: #64c2ec;
     color: black;
     font-family: "Azonix";
-    font-size: 0.75vw;
     padding: 10px;
     border-radius: 100px;
     border: none;
@@ -108,14 +107,14 @@ a:visited {
 
 #about-me-name {
     display: flex;
-    font-size: 60px;
+    font-size: 3vw;
     justify-content: center;
     align-items: center;
 }
 
 #about-me-text {
     font-family: "Montserrat";
-    font-size: 20px;
+    font-size: 1.2vw;
     grid-row: span 2;
     display: flex;
     justify-content: center;
