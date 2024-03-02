@@ -88,12 +88,12 @@ a:visited {
 /*--------------------About Me--------------------*/
 
 .about-me-grid {
-    /*set height and width of grid*/
-    height: 60%;
+    width: 90vw;
+    height: 70vh;
     display: grid;
     grid-template-columns: 1fr 1fr ;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 30px;
+    gap: 3vw;
     word-wrap: break-word;
     margin: 0px 30px;
 }
@@ -107,18 +107,33 @@ a:visited {
 
 #about-me-name {
     display: flex;
-    font-size: 3vw;
+    font-size: 2.5vw;
     justify-content: center;
     align-items: center;
 }
 
 #about-me-text {
     font-family: "Montserrat";
-    font-size: 1.2vw;
+    font-size: 2vmin;
     grid-row: span 2;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 1023px) {
+    .about-me-grid {
+        height: 80vh;
+        grid-template-columns: 1fr;
+    }
+
+    #about-me-name {
+        font-size: 4vw;
+    }
+
+    #about-me-text {
+        font-size: 3vmin;
+    }
 }
 
 /*--------------------Projects--------------------*/
@@ -131,9 +146,9 @@ a:visited {
 
 #projects-header {
     height: 8vh;
-    font-size: 8vh;
+    font-size: 4vw;
     padding-top: 8vh;
-    padding-left: 8vh; /*subject to change*/
+    padding-left: 8vw; /*subject to change*/
 }
 
 #projects-grid-container {
@@ -155,22 +170,23 @@ a:visited {
     flex-direction: column;
     align-items: center;
     /*background-color: red; /*remove once fully edited*/
-    height: 300px;
-    width: 700px;
-    font-size: 25px;
+    height: 36vh;
+    width: 42vw;
+    font-size: 1.6vw;
 }
 
 .projects-item img {
     border: 10px solid black;
     border-radius: 50px;
-    height: 90%;
-    width: 100%;
+    height: 35vh;
+    width: 42vw;
 }
 
 /*--------------------Footer--------------------*/
 
 #footer {
     font-family: "Azonix";
+    font-size: 2vh;
     background-color: #333333;
     color: white;
     height: 8vh;
@@ -179,16 +195,16 @@ a:visited {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 1vh;
 }
 
 #icon-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 3vw;
 }
 
 .icon img{
-    height: 25px;
+    height: 3vh;
 }
