@@ -17,6 +17,20 @@
                 <a href="#projects"><button>PRojects</button></a>
                 <a href="#footer"><button>Contact</button></a>
             </div>
+            <div id="mobile-navigation">
+                <button onclick="openMobileNav()"><img id="mobile-nav-img" src="./svgs/list.svg"/></button>
+            </div>
+            <div id="mobile-navigation-menu">
+                <div id="exit-button-container">
+                    <button onclick="closeMobileNav()"><img id="exit-button-container-img" src="./svgs/x-lg.svg" /></button>
+                </div>
+                <div id="navigation-options-container">
+                    <a onclick="closeMobileNav()" href="#title">Home</a>
+                    <a onclick="closeMobileNav()" href="#about-me">About Me</a>
+                    <a onclick="closeMobileNav()" href="#projects">Projects</a>
+                    <a onclick="closeMobileNav()" href="#footer">Contact</a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -89,6 +103,23 @@
             </div>
         </div>
     </section>
+
+    <!--SCRIPTS-->
+    <script>
+        function openMobileNav() {
+            var mobileNavigation = document.getElementById("mobile-navigation");
+            mobileNavigation.style.display = "none"
+            var mobileNavigationMenu = document.getElementById("mobile-navigation-menu");
+            mobileNavigationMenu.style.display = "flex"
+        }
+
+        function closeMobileNav() {
+            var mobileNavigation = document.getElementById("mobile-navigation");
+            mobileNavigation.style.display = "flex"
+            var mobileNavigationMenu = document.getElementById("mobile-navigation-menu");
+            mobileNavigationMenu.style.display = "none"
+        }
+    </script>    
 
 </body>
 </html>
