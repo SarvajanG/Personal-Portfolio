@@ -122,6 +122,7 @@ a:visited {
     }
 
     #navigation-options-container {
+        color: whitesmoke;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -228,6 +229,7 @@ a:visited {
 }
 
 .projects-item {
+    color: whitesmoke;
     display: flex;
     flex-direction: column;
     align-items: center;
