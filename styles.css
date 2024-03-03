@@ -29,6 +29,9 @@ a {
 a:visited {
     color: whitesmoke;
 }
+a {
+    color: whitesmoke;
+}
 
 /*--------------------Header--------------------*/
 .header {
