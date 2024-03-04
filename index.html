@@ -60,22 +60,20 @@
             <div id="projects-header">
                 <p>Projects</p>
             </div>
-            <div id="projects-grid-container">
-                <div id="projects-grid">
-                    <a href="https://github.students.cs.ubc.ca/CPSC304-2023W-T1/project_c7a3b_h7u7l_n3j3b" target="_blank">
-                        <div class="projects-item">
-                            <img src="./images/Database Preview.png"/>
-                            <p>Shipping Company Database Application</p>
-                        </div>
-                    </a>
-                    <a href="https://github.com/SarvajanG/BlackJack" target="_blank">
-                        <div class="projects-item">
-                            <img src="./images/BlackJack Preview.jpg"/>
-                            <p>Black Jack Game</p>
-                        </div>
-                    </a>
-                </div>
+            
+            <div id="projects-item-container">
+                <a class="projects-item" href="https://github.students.cs.ubc.ca/CPSC304-2023W-T1/project_c7a3b_h7u7l_n3j3b" target="_blank">
+                    <img src="./images/Database Preview.png"/>
+                    <p>Shipping Company Database Application</p>
+                </a>  
+            
+            
+                <a class="projects-item" href="https://github.com/SarvajanG/BlackJack" target="_blank">
+                        <img src="./images/BlackJack Preview.jpg"/>
+                        <p>Black Jack Game</p>
+                </a>   
             </div>
+                      
             
         </div>
     </section>
@@ -107,18 +105,36 @@
     <!--SCRIPTS-->
     <script>
         function openMobileNav() {
-            var mobileNavigation = document.getElementById("mobile-navigation");
-            mobileNavigation.style.display = "none"
-            var mobileNavigationMenu = document.getElementById("mobile-navigation-menu");
-            mobileNavigationMenu.style.display = "flex"
+            if (window.matchMedia("(max-width: 767px)").matches) {
+                var mobileNavigation = document.getElementById("mobile-navigation");
+                mobileNavigation.style.display = "none";
+                var mobileNavigationMenu = document.getElementById("mobile-navigation-menu");
+                mobileNavigationMenu.style.display = "flex";
+            }
+            
         }
 
         function closeMobileNav() {
-            var mobileNavigation = document.getElementById("mobile-navigation");
-            mobileNavigation.style.display = "flex"
-            var mobileNavigationMenu = document.getElementById("mobile-navigation-menu");
-            mobileNavigationMenu.style.display = "none"
+            if (window.matchMedia("(max-width: 767px)").matches) {
+                var mobileNavigation = document.getElementById("mobile-navigation");
+                mobileNavigation.style.display = "flex";
+                var mobileNavigationMenu = document.getElementById("mobile-navigation-menu");
+                mobileNavigationMenu.style.display = "none";
+            }
+            
         }
+
+        function displayMobileNav() {
+            if (window.matchMedia("(min-width: 768px)").matches) {
+                var mobileNavigation = document.getElementById("mobile-navigation");
+                mobileNavigation.style.display = "none";
+                var mobileNavigationMenu = document.getElementById("mobile-navigation-menu");
+                mobileNavigationMenu.style.display = "none";
+            }
+            closeMobileNav();
+            
+        }
+        window.addEventListener("resize", displayMobileNav);
     </script>    
 
 </body>

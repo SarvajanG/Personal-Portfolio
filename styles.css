@@ -73,7 +73,7 @@ a {
     background-color: #01ceee;
 }
 
-#mobile-navigation {
+#mobile-navigation, #mobile-navigation-menu {
     display: none;
 }
 
@@ -211,42 +211,48 @@ a {
 }
 
 #projects-header {
-    height: 8vh;
-    font-size: 8vw;
+    height: 12vmin;
+    font-size: 6vw;
     padding-top: 8vh;
     padding-left: 8vw; /*subject to change*/
 }
 
-#projects-grid-container {
-    height: 84vh;
+#projects-item-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-#projects-grid {
-    gap: 50px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    height: 80vh;
+    gap: 8vh;
 }
 
 .projects-item {
-    color: whitesmoke;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    /*background-color: red; /*remove once fully edited*/
-    height: 36vh;
-    width: 42vw;
-    font-size: 1.6vw;
+    height: 40%;
+    width: 50%;
+    font-size: 1.5vw;
 }
 
 .projects-item img {
     border: 10px solid black;
     border-radius: 50px;
-    height: 35vh;
-    width: 42vw;
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .projects-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 40%;
+        width: 90%;
+        font-size: 3vw;
+    } 
 }
 
 /*--------------------Footer--------------------*/
